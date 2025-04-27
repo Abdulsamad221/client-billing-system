@@ -1,0 +1,76 @@
+.clients-page {
+  padding: 20px;
+}
+
+.client-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.client-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.client-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.client-form button:hover {
+  background-color: #45a049;
+}
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client-card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.client-card:hover {
+  transform: scale(1.02);
+}
+
+.client-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.client-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.client-details p {
+  margin: 3px 0;
+  color: #666;
+}

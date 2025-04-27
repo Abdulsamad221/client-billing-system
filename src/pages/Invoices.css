@@ -1,0 +1,90 @@
+.invoices-page {
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .invoice-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-form input,
+  .invoice-form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .invoice-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .invoice-form button:hover {
+    background-color: #218838;
+  }
+  
+  .invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .invoice-table th,
+  .invoice-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .invoice-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .invoice-table td.paid {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .invoice-table td.unpaid {
+    color: red;
+    font-weight: bold;
+  }
+  .filter-section {
+    margin-bottom: 15px;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+  }
+  .invoice-form {
+    margin-bottom: 20px;
+  }
+  
+  .invoice-form select,
+  .invoice-form input {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .invoice-form button {
+    padding: 8px 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .invoice-form button:hover {
+    background-color: #0b7dda;
+  }
+  

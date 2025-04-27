@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import Clients from './pages/Clients';
+import Invoices from './pages/Invoices';
+import SubmitInvoice from './pages/SubmitInvoice';  // Import SubmitInvoice page
+import Reports from './pages/Reports';  // Import Reports component
+import Sidebar from './components/Sidebar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        {/* Sidebar for navigation */}
+        <Sidebar />
+        <div className="main-content">
+          <Routes>
+            {/* Defining Routes for each page */}
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/invoices" element={<Invoices />} />
+            <Route path="/submit-invoice" element={<SubmitInvoice />} /> {/* Add SubmitInvoice route */}
+            <Route path="/reports" element={<Reports />} /> {/* Add the Reports route */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

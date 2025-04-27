@@ -1,0 +1,49 @@
+.dashboard-page {
+  padding: 2rem;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dashboard-header h1 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat-card {
+  flex: 1 1 200px;
+  padding: 1.5rem;
+  background-color: white;
+  border-left: 6px solid #2e7d32;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.stat-card p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.clients-card { border-color: #1976d2; }
+.income-card { border-color: #388e3c; }
+.ongoing-card { border-color: #f9a825; }
+.success-card { border-color: #6a1b9a; }
